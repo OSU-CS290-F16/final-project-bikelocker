@@ -4,37 +4,7 @@
 
 <main>
 
-    <div class="modal-dialog">
-
-      <div class="modal-body">
-        <div class="todo-input-element required">
-          <label for="todo-input-what">Manufacturer</label>
-          <input type="text" id="todo-input-what">
-        </div>
-        <div class="todo-input-element required">
-          <label for="todo-input-where">Frame Model</label>
-          <input type="text" id="todo-input-where">
-        </div>
-        <div class="todo-input-element required">
-          <label for="todo-input-when">Model Year</label>
-          <input type="number" id="todo-input-when" min="1900" max="2018">
-        </div>
-        <div class="todo-input-element required">
-          <label for="todo-input-who">Who</label>
-          <input type="text" id="todo-input-who">
-        </div>
-        <div class="todo-input-element">
-          <label for="todo-input-details">Serial #</label>
-          <input type="text" id="todo-input-details">
-        </div>
-      </div>
-
-      <div class="modal-footer">
-        <button type="button" class="modal-cancel-button">Clear Fields</button>
-        <button type="button" class="modal-accept-button">Log Bike</button>
-      </div>
-    </div>
-  </div>
+    {{> add-bike-page}}
 
 </main>
 
