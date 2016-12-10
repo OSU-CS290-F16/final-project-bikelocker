@@ -11,22 +11,16 @@ var staticPublic = path.join(__dirname, 'public');
 var app = express();
 var port = process.env.PORT || 3000;
 
-
 var mongoHost = process.env.MONGO_HOST;
 var mongoPort = process.env.MONGO_PORT || 27017;
 var mongoUser = process.env.MONGO_USER;
 var mongoPassword = process.env.MONGO_PASSWORD;
 var mongoDBName = process.env.MONGO_DB;
-// var mongoURL = 'mongodb:'+ '//' + mongoUser + ':' + mongoPassword + '@' + mongoHost + ':' + '27017' + '/' + mongoDBName;
 var mongoURL = 'mongodb://' + mongoUser + ':' + mongoPassword + '@' + mongoHost + ':' + mongoPort + '/' + mongoDBName;
 var mongoDB;
 
-
-
-
 app.engine('handlebars', exphbs({ defaultLayout: 'main' }))
 app.set('view engine', 'handlebars');
-
 app.use(express.static(staticPublic));
 app.use(bodyParser.json());
 
@@ -100,8 +94,6 @@ app.get('/BikeLocker-:bike', function(req, res, next) {
 app.get('/#', function(req, res) {
 
 })
-
-
 
 app.post('/BikeLocker/add-photo', function (req, res, next) {
 
