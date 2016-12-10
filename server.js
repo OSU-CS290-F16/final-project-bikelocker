@@ -91,9 +91,13 @@ app.get('/BikeLocker-:bike', function(req, res, next) {
   });
 });
 
-app.get('/#', function(req, res) {
+app.get('/Search', function(req, res) {
 
-})
+  res.render('search-page', {
+
+    title : 'Search log'
+  });
+});
 
 app.post('/BikeLocker/add-photo', function (req, res, next) {
 

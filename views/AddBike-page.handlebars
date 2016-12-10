@@ -4,7 +4,47 @@
 
 <main>
 
-    {{> add-bike-page}}
+    <div class="modal-dialog">
+
+      <div class="modal-body">
+        <div class="todo-input-element required">
+          <label for="what">Make and model</label>
+          <input type="text" id="what">
+        </div>
+        <div class="todo-input-element required">
+          <label for="where">Stolen from</label>
+          <input type="text" id="where">
+        </div>
+        <div class="todo-input-element required">
+          <label for="when">Date of theft</label>
+          <!-- <input type="number" id="when" min="1900" max="2018"> -->
+          <input type="text" id="when">
+        </div>
+        <div class="todo-input-element required">
+          <label for="who">Serial#</label>
+          <input type="text" id="who">
+        </div>
+        <div class="todo-input-element required">
+          <label for="details">Your preferred method of contact</label>
+          <input type="textarea" id="details">
+        </div>
+        <div class="todo-input-element required">
+          <label for="Image">Picture URL</label>
+          <input type="text" id="image">
+        </div>
+      </div>
+
+      <div class="modal-footer">
+        <button type="button" class="modal-cancel-button">Clear Fields</button>
+        <button type="button" class="modal-accept-button">Log Bike</button>
+      </div>
+    </div>
+    </div>
+
+
+    </div>
+
+
 
 </main>
 

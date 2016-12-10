@@ -1,13 +1,15 @@
 {{> header}}
 
 <main>
+  <body>
 
-  <h1>Here is the current log of reported stolen bikes</h1>
+    <h1>Here is the current log of reported stolen bikes</h1>
 
-  {{#each bikes}}
-  {{> todo}}
-  {{/each }}
+    {{#each bikes}}
+    {{> bikeDiv}}
+    {{/each }}
 
+  </body>
 </main>
 
 {{> footer}}

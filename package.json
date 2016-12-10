@@ -21,7 +21,6 @@
   "homepage": "https://github.com/OSU-CS290-F16/final-project-bikelocker",
   "dependencies": {
     "express": "^4.14.0",
-    "express-handlebars": "^3.0.0",
-    "mongodb": "^2.2.15"
+    "express-handlebars": "^3.0.0"
   }
 }
