@@ -11,11 +11,18 @@ var staticPublic = path.join(__dirname, 'public');
 var app = express();
 var port = process.env.PORT || 3000;
 
-var mongoHost = process.env.MONGO_HOST;
+// var mongoHost = process.env.MONGO_HOST;
+// var mongoPort = process.env.MONGO_PORT || 27017;
+// var mongoUser = process.env.MONGO_USER;
+// var mongoPassword = process.env.MONGO_PASSWORD;
+// var mongoDBName = process.env.MONGO_DB;
+
+//not sure if these were suppose to be set manually if running on another system
+var mongoHost = 'classmongo.engr.oregonstate.edu';
 var mongoPort = process.env.MONGO_PORT || 27017;
-var mongoUser = process.env.MONGO_USER;
-var mongoPassword = process.env.MONGO_PASSWORD;
-var mongoDBName = process.env.MONGO_DB;
+var mongoUser = 'cs290_laranavm';
+var mongoPassword = 'VmTfHHKCUxfR5qb';
+var mongoDBName = 'cs290_laranavm';
 var mongoURL = 'mongodb://' + mongoUser + ':' + mongoPassword + '@' + mongoHost + ':' + mongoPort + '/' + mongoDBName;
 var mongoDB;
 
